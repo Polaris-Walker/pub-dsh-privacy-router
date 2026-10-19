@@ -1,0 +1,40 @@
+{
+  "name": "pi-privacy-router",
+  "version": "0.1.0",
+  "description": "Privacy gate for Pi: local model by default, masked or approved cloud model on demand",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "privacy",
+    "ollama",
+    "hybrid-compute"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-ai": "0.73.1",
+    "@mariozechner/pi-coding-agent": "0.73.1",
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3"
+  }
+}

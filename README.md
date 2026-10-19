@@ -2,6 +2,8 @@
 
 在同一个 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 对话中，根据本地隐私检查结果自动选择本地模型或云端模型。敏感和不确定请求留在本地；只有判定为 `public` 的纯文本请求会进入经过重建的云端白名单上下文。本仓库只发布 Host 侧路由，不包含 Web UI 实现或 DSH 源码补丁。
 
+> **Pi 版本**：[`pi/`](pi/README.md) 目录提供同一套隐私路由的 [Pi coding agent](https://github.com/badlogic/pi-mono) 扩展（TypeScript），支持本地 Ollama、糊名后发云端和 `/privacy` 切换器。
+
 ## 工作方式
 
 ```text
